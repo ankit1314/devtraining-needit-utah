@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_58872_needit.getEmailAddressOnNew</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>getEmailAddressOnNew</name>
+        <script><![CDATA[var getEmailAddressOnNew = Class.create();
+getEmailAddressOnNew.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getEmailId: function() {
+	var userRecord = new GlideRecord('sys_user');
+		userRecord.get(this.getParameter('sysparm_userId'));
+		gs.info('email : ' +userRecord.email);
+		return userRecord.email;
+    },
+    type: 'getEmailAddressOnNew'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-15 13:00:48</sys_created_on>
+        <sys_id>2cbb6afa474b7110c4c01a2f316d43a2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>getEmailAddressOnNew</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_2cbb6afa474b7110c4c01a2f316d43a2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-15 13:36:59</sys_updated_on>
+    </sys_script_include>
+</record_update>

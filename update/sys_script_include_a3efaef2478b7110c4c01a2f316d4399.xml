@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_58872_needit.TestNeedItUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>TestNeedItUtils</description>
+        <name>TestNeedItUtils</name>
+        <script><![CDATA[var TestNeedItUtils = Class.create();
+TestNeedItUtils.prototype = {
+    initialize: function() {
+		this.x = 1;
+    },
+	
+	testFunc: function(){
+		gs.info('x : '+ this.x);
+	},
+
+    type: 'TestNeedItUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-15 13:24:48</sys_created_on>
+        <sys_id>a3efaef2478b7110c4c01a2f316d4399</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>TestNeedItUtils</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_a3efaef2478b7110c4c01a2f316d4399</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-15 13:36:33</sys_updated_on>
+    </sys_script_include>
+</record_update>
